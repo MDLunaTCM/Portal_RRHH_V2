@@ -1,4 +1,4 @@
-import { Users, CircleCheck as CheckCircle, Clock, CircleAlert as AlertCircle, TrendingUp, Calendar } from 'lucide-react';
+import { Users, Clock, CircleAlert as AlertCircle, TrendingUp, Calendar } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { Badge } from '@/components/ui/Badge';
@@ -6,10 +6,10 @@ import { Avatar } from '@/components/ui/Avatar';
 import { User } from '@/types';
 
 interface ManagerDashboardProps {
-  user: User;
+  user?: User;
 }
 
-export function ManagerDashboard({ user }: ManagerDashboardProps) {
+export function ManagerDashboard({}: ManagerDashboardProps) {
   return (
     <div className="space-y-6">
       <div>

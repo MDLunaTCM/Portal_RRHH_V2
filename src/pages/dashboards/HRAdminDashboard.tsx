@@ -5,10 +5,10 @@ import { Badge } from '@/components/ui/Badge';
 import { User } from '@/types';
 
 interface HRAdminDashboardProps {
-  user: User;
+  user?: User;
 }
 
-export function HRAdminDashboard({ user }: HRAdminDashboardProps) {
+export function HRAdminDashboard({}: HRAdminDashboardProps) {
   return (
     <div className="space-y-6">
       <div>
