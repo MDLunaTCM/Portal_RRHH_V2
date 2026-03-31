@@ -156,8 +156,8 @@ export function Sidebar({ userRole, collapsed }: SidebarProps) {
               className={cn(
                 'flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors',
                 isActive
-                  ? 'bg-secondary text-foreground'
-                  : 'text-muted-foreground hover:bg-secondary/50 hover:text-foreground'
+                  ? 'bg-secondary text-secondary-foreground shadow-md shadow-secondary/30 font-semibold'
+                  : 'text-muted-foreground hover:bg-secondary/40 hover:text-foreground'
               )}
             >
               <Icon className="h-5 w-5 flex-shrink-0" />
