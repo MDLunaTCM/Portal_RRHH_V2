@@ -4,30 +4,64 @@
 
 @layer base {
   :root {
+    /* Light Mode - Humand Colors */
     --background: 0 0% 100%;
-    --foreground: 222 47% 11%;
-    --muted: 210 40% 96%;
+    --foreground: 222 78% 12%;
+    --muted: 220 14% 96%;
     --muted-foreground: 215 16% 47%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
+    --popover-foreground: 222 78% 12%;
+    --border: 220 20% 88%;
+    --input: 220 20% 92%;
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
-    --primary: 222 47% 11%;
+    --card-foreground: 222 78% 12%;
+    /* Primary: Deep Navy (#0E1535) */
+    --primary: 222 78% 12%;
     --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222 47% 11%;
-    --accent: 210 40% 96%;
-    --accent-foreground: 222 47% 11%;
+    /* Secondary: Brand Blue (#496BE3 - converted to HSL: 227, 80%, 62%) */
+    --secondary: 227 80% 62%;
+    --secondary-foreground: 210 40% 98%;
+    /* Accent: Light Blue (#5B77D3 - converted to HSL: 227, 66%, 60%) */
+    --accent: 227 66% 60%;
+    --accent-foreground: 210 40% 98%;
+    /* Additional Accent: #8AA5F2 (HSL: 228, 94%, 72%) */
+    --accent-light: 228 94% 72%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
     --success: 142 71% 45%;
     --success-foreground: 210 40% 98%;
     --warning: 38 92% 50%;
-    --warning-foreground: 222 47% 11%;
-    --ring: 222 47% 11%;
-    --radius: 0.75rem;
+    --warning-foreground: 222 78% 12%;
+    --ring: 227 80% 62%;
+    --radius: 0.875rem;
+  }
+
+  /* Dark Mode */
+  [data-theme="dark"] {
+    --background: 222 78% 7%;
+    --foreground: 210 40% 98%;
+    --muted: 222 47% 20%;
+    --muted-foreground: 215 16% 70%;
+    --popover: 222 78% 10%;
+    --popover-foreground: 210 40% 98%;
+    --border: 222 47% 25%;
+    --input: 222 47% 20%;
+    --card: 222 78% 10%;
+    --card-foreground: 210 40% 98%;
+    --primary: 222 78% 12%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 227 80% 62%;
+    --secondary-foreground: 222 78% 7%;
+    --accent: 227 66% 60%;
+    --accent-foreground: 222 78% 7%;
+    --accent-light: 228 94% 72%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 222 78% 7%;
+    --success: 142 71% 45%;
+    --success-foreground: 222 78% 7%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 222 78% 7%;
+    --ring: 227 80% 62%;
   }
 }
 
@@ -38,6 +72,18 @@
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+  }
+
+  h1 {
+    @apply text-3xl;
+  }
+
+  h2 {
+    @apply text-2xl;
   }
 }
 

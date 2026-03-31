@@ -3,6 +3,7 @@ import { Search, Bell, Menu, LogOut, User as UserIcon, Settings } from 'lucide-r
 import { Avatar } from '@/components/ui/Avatar';
 import { Input } from '@/components/ui/Input';
 import { Button } from '@/components/ui/Button';
+import { ThemeToggle } from '@/components/ui/ThemeToggle';
 import { User } from '@/types';
 
 interface HeaderProps {
@@ -69,6 +70,8 @@ export function Header({ user, onToggleSidebar, onLogout }: HeaderProps) {
               </div>
             )}
           </div>
+
+          <ThemeToggle />
 
           <div className="h-6 w-px bg-border"></div>
 

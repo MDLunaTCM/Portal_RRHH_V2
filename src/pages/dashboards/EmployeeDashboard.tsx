@@ -29,8 +29,8 @@ export function EmployeeDashboard({ user }: EmployeeDashboardProps) {
                 <p className="text-2xl font-bold mt-1">15</p>
                 <p className="text-xs text-muted-foreground mt-1">of 20 remaining</p>
               </div>
-              <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
-                <Calendar className="h-6 w-6 text-primary" />
+              <div className="h-12 w-12 rounded-full bg-secondary/20 flex items-center justify-center shadow-lg shadow-secondary/20">
+                <Calendar className="h-6 w-6 text-secondary" />
               </div>
             </div>
           </CardContent>
@@ -59,8 +59,8 @@ export function EmployeeDashboard({ user }: EmployeeDashboardProps) {
                 <p className="text-2xl font-bold mt-1">12</p>
                 <p className="text-xs text-muted-foreground mt-1">available to view</p>
               </div>
-              <div className="h-12 w-12 rounded-full bg-success/10 flex items-center justify-center">
-                <FileText className="h-6 w-6 text-success" />
+              <div className="h-12 w-12 rounded-full bg-accent/20 flex items-center justify-center shadow-lg shadow-accent/20">
+                <FileText className="h-6 w-6 text-accent" />
               </div>
             </div>
           </CardContent>
@@ -173,8 +173,8 @@ export function EmployeeDashboard({ user }: EmployeeDashboardProps) {
                   <span className="text-sm font-medium">Overall Completion</span>
                   <span className="text-sm font-medium">75%</span>
                 </div>
-                <div className="w-full bg-muted rounded-full h-2">
-                  <div className="bg-primary h-2 rounded-full" style={{ width: '75%' }}></div>
+                <div className="w-full bg-muted rounded-full h-2.5">
+                  <div className="bg-secondary h-2.5 rounded-full shadow-lg shadow-secondary/50" style={{ width: '75%' }}></div>
                 </div>
               </div>
               <div className="space-y-2">
