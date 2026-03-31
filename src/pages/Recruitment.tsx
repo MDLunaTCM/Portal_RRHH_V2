@@ -1,4 +1,4 @@
-import { Users, Plus, Filter } from 'lucide-react';
+import { Plus, Filter } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { Badge } from '@/components/ui/Badge';
